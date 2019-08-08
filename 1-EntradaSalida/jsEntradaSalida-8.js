@@ -6,15 +6,18 @@ function SacarResto()
 {
     var numero1;
     var numero2;
-    var convierte1;
-    var convierte2;
     var resultado;
 
     numero1 = document.getElementById("numeroDividendo").value;
     numero2 = document.getElementById("numeroDivisor").value;
 
-    convierte1 = parseInt(numero1);
-    convierte2 = parseInt(numero2);
+    parseInt(numero1);
+    parseInt(numero2);
+
+    resultado = numero1 % numero2;
+
+    alert ("El resto es "+resultado);
+    
     
 }
 
