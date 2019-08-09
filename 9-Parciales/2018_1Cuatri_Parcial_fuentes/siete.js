@@ -16,7 +16,7 @@ function mostrar()
       
         nota = parseInt(prompt("Ingrese una nota"));
         
-        while(nota < 0 || nota > 10){
+        while(nota < 0 || nota > 10 || isNaN(nota)){
             nota = parseInt(prompt("La nota que ingreso es invalida, reingrese una nota"));
         }
         
@@ -29,7 +29,8 @@ function mostrar()
         if(flag == 0){
             flag = 1;
             minimo = nota;
- 
+            sexoMinimo = sexo;
+            
          }
         if (nota >= 6 && sexo == "m"){
             acumuladorVaronNota6++;
